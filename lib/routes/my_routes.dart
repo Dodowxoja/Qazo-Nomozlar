@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qazo_nomozlar/views/lang/lang_page.dart';
+import 'package:qazo_nomozlar/views/onbording/onbording_page.dart';
 import 'package:qazo_nomozlar/views/splash/splash_page.dart';
 
 class MyRoutes {
@@ -15,7 +16,7 @@ class MyRoutes {
       case '/lang':
         return MaterialPageRoute(builder: (context) => const LangView());
       case '/onbording':
-      // return MaterialPageRoute(builder: (context) => );
+        return MaterialPageRoute(builder: (context) => const OnBordingView());
       case '/log_in':
       // return MaterialPageRoute(builder: (context) => );
       case '/sign_up':

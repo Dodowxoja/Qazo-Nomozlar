@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qazo_nomozlar/core/components/my_text_style.dart';
+import 'package:qazo_nomozlar/core/components/lang_button.dart';
 
 class LangView extends StatelessWidget {
   const LangView({Key? key}) : super(key: key);
@@ -20,11 +20,11 @@ class LangView extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  langButton("O'zbek tili", "uzb", context),
+                  LangButton.langButton("O'zbek tili", "uzb", context),
                   const Divider(),
-                  langButton("Ўзбек тили", "uzb", context),
+                  LangButton.langButton("Ўзбек тили", "uzb", context),
                   const Divider(),
-                  langButton("Русский язык", "rus", context),
+                  LangButton.langButton("Русский язык", "rus", context),
                   const Divider(),
                 ],
               ),
@@ -32,31 +32,6 @@ class LangView extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  InkWell langButton(textLang, flagLang, context) {
-    return InkWell(
-      child: SizedBox(
-        height: 50,
-        child: Row(
-          children: [
-            const SizedBox(width: 10),
-            Image.asset('assets/images/${flagLang}_flag.png'),
-            const SizedBox(width: 15),
-            Text(
-              textLang,
-              style: MyTextStyle.myTextStyle(
-                size: 18.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ],
-        ),
-      ),
-      onTap: () {
-        // Navigator.pushNamed(context, '/onbording');
-      },
     );
   }
 }
