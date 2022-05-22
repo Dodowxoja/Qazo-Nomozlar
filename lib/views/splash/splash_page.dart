@@ -25,7 +25,9 @@ class _SplashViewState extends State<SplashView> {
       alignment: Alignment.center,
       decoration: const BoxDecoration(
         color: Colors.green,
-        image: DecorationImage(image: AssetImage('assets/images/vector_white.png')),
+        image: DecorationImage(
+          image: AssetImage('assets/images/vector_white.png'),
+        ),
       ),
     );
   }
