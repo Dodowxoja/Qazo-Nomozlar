@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qazo_nomozlar/views/lang/lang_page.dart';
-import 'package:qazo_nomozlar/views/onbording/onbording_page.dart';
+import 'package:qazo_nomozlar/views/onbording/view/onbording_page.dart';
 import 'package:qazo_nomozlar/views/splash/splash_page.dart';
 
 class MyRoutes {
